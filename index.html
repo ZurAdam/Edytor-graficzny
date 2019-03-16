@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edytor zdjęć</title>
+</head>
+<body>
+    
+    <label>Image File:</label><br/>
+    <input type="file" id="imageLoader" name="imageLoader"/>
+    <canvas id="imageCanvas"></canvas><br/>
+
+
+    <label>Blur</label>
+    <input type = "range" min = "0" max = "100" value = "0" step = "1" onchange = "applyfilter()" data-filter="blur" data-scale = "px"><br>
+    <label>Brightness</label>
+    <input type = "range" min = "0" max = "200" value = "100" step = "1" onchange = "applyfilter()" data-filter="brightness" data-scale = "px"><br>
+    <label>Contrast</label>
+    <input type = "range" min = "0" max = "200" value = "100" step = "1"onchange = "applyfilter()" data-filter="contrast" data-scale = "px"><br>
+    <label>Grayscale</label>
+    <input type = "range" min = "0" max = "100" value = "0" step = "1"onchange = "applyfilter()" data-filter="grayscale" data-scale = "px"><br>
+    <label>Hue roatate</label>
+    <input type = "range" min = "0" max = "360" value = "0" step = "1"onchange = "applyfilter()" data-filter="hue-rotate" data-scale = "px"><br>
+    <label>Invert</label>
+    <input type = "range" min = "0" max = "100" value = "0" step = "1"onchange = "applyfilter()" data-filter="invert" data-scale = "px"><br>
+    <label>Opacity</label>
+    <input type = "range" min = "0" max = "100" value = "100" step = "1"onchange = "applyfilter()" data-filter="opacity" data-scale = "px"><br>
+    <label>Saturate</label>
+    <input type = "range" min = "0" max = "100" value = "0" step = "1"onchange = "applyfilter()" data-filter="saturate" data-scale = "px"><br>
+    <label>Sepia</label>
+    <input type = "range" min = "0" max = "100" value = "0" step = "1"onchange = "applyfilter()" data-filter="sepia" data-scale = "px"><br>
+</body>
+<script src="script.js"></script>
+</html>
