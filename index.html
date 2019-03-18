@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Edytor zdjęć</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <label>Image File:</label><br/>
+    <label>Plik z grafiką:</label><br/>
     <input type="file" id="imageLoader" name="imageLoader"/>
-    <canvas id="imageCanvas"></canvas><br/>
+    <canvas id="imageCanvas"></canvas><br/><br/>
 
 
-    <label>Blur</label>
+    <label>Rozmycie</label>
     <input type = "range" min = "0" max = "100" value = "0" step = "1" onchange = "applyfilter()" data-filter="blur" data-scale = "px"><br>
-    <label>Brightness</label>
+    <label>Jasność</label>
     <input type = "range" min = "0" max = "200" value = "100" step = "1" onchange = "applyfilter()" data-filter="brightness" data-scale = "px"><br>
-    <label>Contrast</label>
+    <label>Kontrast</label>
     <input type = "range" min = "0" max = "200" value = "100" step = "1"onchange = "applyfilter()" data-filter="contrast" data-scale = "px"><br>
-    <label>Grayscale</label>
+    <label>Skala szarości</label>
     <input type = "range" min = "0" max = "100" value = "0" step = "1"onchange = "applyfilter()" data-filter="grayscale" data-scale = "px"><br>
-    <label>Hue roatate</label>
+    <label>Odwrócenie barw</label>
     <input type = "range" min = "0" max = "360" value = "0" step = "1"onchange = "applyfilter()" data-filter="hue-rotate" data-scale = "px"><br>
-    <label>Invert</label>
+    <label>Inwersja</label>
     <input type = "range" min = "0" max = "100" value = "0" step = "1"onchange = "applyfilter()" data-filter="invert" data-scale = "px"><br>
-    <label>Opacity</label>
+    <label>Pzeźroczystość</label>
     <input type = "range" min = "0" max = "100" value = "100" step = "1"onchange = "applyfilter()" data-filter="opacity" data-scale = "px"><br>
-    <label>Saturate</label>
+    <label>Saturacja</label>
     <input type = "range" min = "0" max = "100" value = "0" step = "1"onchange = "applyfilter()" data-filter="saturate" data-scale = "px"><br>
     <label>Sepia</label>
     <input type = "range" min = "0" max = "100" value = "0" step = "1"onchange = "applyfilter()" data-filter="sepia" data-scale = "px"><br>
